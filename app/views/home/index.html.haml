@@ -1,0 +1,43 @@
+%h1 Kula
+
+%body
+  #st-container.st-container
+    /
+      example menus
+      these menus will be on top of the push wrapper
+    %nav#menu-2.st-menu.st-effect-2
+      %h2.icon.icon-stack Sidebar
+      %ul
+        %li
+          %a.icon.icon-data{:href => "#"} Blatata Management
+        %li
+          %a.icon.icon-location{:href => "#"} Location
+        %li
+          %a.icon.icon-study{:href => "#"} Study
+        %li
+          %a.icon.icon-photo{:href => "#"} Collections
+        %li
+          %a.icon.icon-wallet{:href => "#"} Credits
+    / content push wrapper
+    .st-pusher
+      /
+        example menus
+        these menus will be under the push wrapper
+      .st-content
+        / this is the wrapper for the content
+        .st-content-inner
+          / extra div for emulating position:fixed of the menu
+          / Top Navigation
+          .codrops-top.clearfix
+          %header.codrops-header
+            %h1
+              Sidebar Transitions
+              %span Transition effects for off-canvas views
+          .main.clearfix
+            #st-trigger-effects.column
+              %button{"data-effect" => "st-effect-2"} Reveal
+          / /main
+        / /st-content-inner
+      / /st-content
+    / /st-pusher
+  / /st-container

@@ -10,7 +10,10 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require modernizr.custom.js
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require classie.js
+//= require sidebarEffects.js
 //= require_tree .

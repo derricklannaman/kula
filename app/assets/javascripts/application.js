@@ -15,5 +15,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require classie.js
-//= require sidebarEffects.js
+
 //= require_tree .

@@ -12,7 +12,7 @@ gem 'haml'
 gem 'html2haml'
 # gem 'stream_rails'
 # gem 'font-awesome-sass'
-# gem 'jquery-turbolinks'
+gem 'jquery-turbolinks'
 
 # gem 'devise'
 
@@ -27,12 +27,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development do
   # gem 'annotate'
-  # gem 'awesome_print'
-  # gem 'better_errors'
-  # gem 'binding_of_caller'
+  gem 'awesome_print', require:"ap"
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'haml-rails'
   gem 'pry-rails'
   gem 'quiet_assets'
+  gem 'meta_request'
   gem 'thin'
   gem 'rails_db'
 end

@@ -153,22 +153,22 @@ body,
 }*/
 
 /* Effect 2: Reveal */
-.st-effect-2.st-menu-open .st-pusher {
+.nav-reveal.st-menu-open .st-pusher {
 	-webkit-transform: translate3d(300px, 0, 0);
 	transform: translate3d(300px, 0, 0);
 }
 
-.st-effect-2.st-menu {
+.nav-reveal.st-menu {
 	z-index: 1;
 }
 
-.st-effect-2.st-menu-open .st-effect-2.st-menu {
+.nav-reveal.st-menu-open .nav-reveal.st-menu {
 	visibility: visible;
 	-webkit-transition: -webkit-transform 0.5s;
 	transition: transform 0.5s;
 }
 
-.st-effect-2.st-menu::after {
+.nav-reveal.st-menu::after {
 	display: none;
 }
 

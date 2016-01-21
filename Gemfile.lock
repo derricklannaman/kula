@@ -84,6 +84,8 @@ GEM
     ffi (1.9.10)
     font-awesome-rails (4.5.0.0)
       railties (>= 3.2, < 5.0)
+    font-awesome-sass (4.5.0)
+      sass (>= 3.2)
     git-version-bump (0.15.1)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
@@ -149,6 +151,7 @@ GEM
       rack (~> 1.4)
     rack-test (0.6.3)
       rack (>= 1.0)
+    railroady (1.4.2)
     rails (4.2.5)
       actionmailer (= 4.2.5)
       actionpack (= 4.2.5)
@@ -281,6 +284,7 @@ DEPENDENCIES
   database_cleaner
   factory_girl_rails
   faker
+  font-awesome-sass
   haml
   haml-rails
   html2haml
@@ -293,6 +297,7 @@ DEPENDENCIES
   pg (~> 0.15)
   pry-rails
   quiet_assets
+  railroady
   rails (= 4.2.5)
   rails_12factor
   rails_db

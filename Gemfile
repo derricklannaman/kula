@@ -11,7 +11,7 @@ gem 'turbolinks'
 gem 'haml'
 gem 'html2haml'
 # gem 'stream_rails'
-# gem 'font-awesome-sass'
+gem 'font-awesome-sass'
 gem 'jquery-turbolinks'
 
 # gem 'devise'
@@ -47,6 +47,7 @@ group :development, :test do
   gem 'spring'
   gem "rspec-rails"
   gem "factory_girl_rails"
+  gem 'railroady'
 end
 
 group :test do

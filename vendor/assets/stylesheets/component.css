@@ -64,7 +64,7 @@ body,
 	top: 0;
 	left: 0;
 	z-index: 100;
-	/*visibility: hidden;*/
+	visibility: hidden;
 	width: 300px;
 	height: 100%;
 	background: #48a770;
@@ -73,7 +73,7 @@ body,
 }
 
 .st-menu::after {
-	position: absolute;
+/*	position: absolute;
 	top: 0;
 	right: 0;
 	width: 100%;
@@ -82,15 +82,15 @@ body,
 	content: '';
 	opacity: 1;
 	-webkit-transition: opacity 0.5s;
-	transition: opacity 0.5s;
+	transition: opacity 0.5s;*/
 }
 
 .st-menu-open .st-menu::after {
-	width: 0;
+/*	width: 0;
 	height: 0;
 	opacity: 1;
 	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
-	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;*/
 }
 
 /* content style */
@@ -110,7 +110,8 @@ body,
 	font-size: 2em;
 }
 
-.st-menu ul li a {
+.st-menu ul li a,
+#icon_name {
 	display: block;
 	padding: 1em 1em 1em 1.2em;
 	outline: none;
@@ -156,14 +157,24 @@ body,
 	display: none;
 }
 
-h2#icon_name {
-  border: 1px solid #F00;
-  float: left;
+#icon_name {
+	font-size: 2.625em;
   margin-bottom: 100px;
   position: absolute;
   z-index: 100;
-  color: red;
+  color: inherit;
   margin-bottom: -50px;
+  margin-top: -30px;
+  width: 300px;
+  box-shadow: none;
+}
+
+.color-transition {
+	color: white !important;
+   -webkit-transition-delay: color 1s ease-in;
+   -moz-transition-delay: color 1s ease-in;
+   -ms-transition-delay: color 1s ease-in;
+   transition-delay: color 1s ease-in;
 }
 
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */

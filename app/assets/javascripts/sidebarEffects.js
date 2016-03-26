@@ -31,10 +31,12 @@ $(document).ready(function(){
 	function init() {
 
 		var container = document.getElementById( 'st-container' ),
+			logo = document.getElementById('icon_name'),
 			buttons = Array.prototype.slice.call( document.querySelectorAll( '#st-trigger-effects > button' ) ),
 			// event type (if mobile use touch events)
 			eventtype = mobilecheck() ? 'touchstart' : 'click',
 			resetMenu = function() {
+				logo.classList.remove('color-transition');
 				classie.remove( container, 'st-menu-open' );
 			},
 			bodyClickFn = function(evt) {
@@ -53,6 +55,7 @@ $(document).ready(function(){
 				container.className = 'st-container'; // clear
 				classie.add( container, effect );
 				setTimeout( function() {
+					logo.classList.add('color-transition');
 					classie.add( container, 'st-menu-open' );
 				}, 25 );
 				document.addEventListener( eventtype, bodyClickFn );

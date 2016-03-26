@@ -11,9 +11,12 @@
  * file per style scope.
  *
  *= require normalize.css
- *= require component.css
+ *= require component.scss
  *= require demo.css
 
  *= require_tree .
  *= require_self
  */
+
+  @import "font-awesome-sprockets";
+  @import "font-awesome";

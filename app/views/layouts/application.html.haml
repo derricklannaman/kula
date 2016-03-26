@@ -7,8 +7,10 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
+    = render partial: 'shared/top_navigation_layer'
     #app-container.app-container
       = render partial: "shared/side_navigation"
+      .st-pusher
       = yield
 
 

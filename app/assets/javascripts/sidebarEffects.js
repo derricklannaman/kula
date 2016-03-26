@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 	function init() {
 
-		var container = document.getElementById( 'st-container' ),
+		var container = document.getElementById( 'app-container' ),
 			logo = document.getElementById('icon_name'),
 			buttons = Array.prototype.slice.call( document.querySelectorAll( '#st-trigger-effects > button' ) ),
 			// event type (if mobile use touch events)
@@ -52,7 +52,7 @@ $(document).ready(function(){
 			el.addEventListener( eventtype, function( ev ) {
 				ev.stopPropagation();
 				ev.preventDefault();
-				container.className = 'st-container'; // clear
+				container.className = 'app-container'; // clear
 				classie.add( container, effect );
 				setTimeout( function() {
 					logo.classList.add('color-transition');

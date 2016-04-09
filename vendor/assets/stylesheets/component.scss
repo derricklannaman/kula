@@ -26,8 +26,7 @@ body,
 .app-container {
 	position: relative;
 	overflow: hidden;
-	/*background: #48a770;*/
-	background: #f3efe0;
+	background: #48a770;
 }
 
 .st-pusher {
@@ -159,33 +158,23 @@ body,
 }
 
 #icon_name {
+	font-size: 2.625em;
   margin-bottom: 100px;
   position: absolute;
   z-index: 100;
   color: inherit;
   margin-bottom: -50px;
+  margin-top: -30px;
   width: 300px;
   box-shadow: none;
-	span.app_name {
-		font-size: 4em;
-	}
 }
 
-/*.color-transition,*/
-.menu-icon-transition {
+.color-transition {
 	color: white !important;
-	background-color: #48a770;
-}
-
-.menu-icon-transition {
-	opacity: 0;
-}
-
-button.nav-hamburger {
-	float: left;
-  margin-top: -6px;
-  background-color: rgba(0, 0, 0, 0);
-  color: #388a5a;
+   -webkit-transition-delay: color 1s ease-in;
+   -moz-transition-delay: color 1s ease-in;
+   -ms-transition-delay: color 1s ease-in;
+   transition-delay: color 1s ease-in;
 }
 
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */

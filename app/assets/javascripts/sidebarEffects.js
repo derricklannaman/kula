@@ -35,12 +35,14 @@ $(document).ready(function(){
 			buttons = Array.prototype.slice.call( document.querySelectorAll( '#st-trigger-effects > button' ) ),
 			// event type (if mobile use touch events)
 			eventtype = mobilecheck() ? 'touchstart' : 'click',
+
 			resetMenu = function() {
+				buttons[0].classList.remove('menu-icon-transition');
 				logo.classList.remove('color-transition');
 				classie.remove( container, 'st-menu-open' );
 			},
 			bodyClickFn = function(evt) {
-				if( !hasParentClass( evt.target, 'st-menu' ) ) {
+				if( !hasParentClass( evt.target, 'st-menu') ) {
 					resetMenu();
 					document.removeEventListener( eventtype, bodyClickFn );
 				}
@@ -55,6 +57,7 @@ $(document).ready(function(){
 				container.className = 'app-container'; // clear
 				classie.add( container, effect );
 				setTimeout( function() {
+					el.classList.add('menu-icon-transition');
 					logo.classList.add('color-transition');
 					classie.add( container, 'st-menu-open' );
 				}, 25 );
@@ -72,4 +75,3 @@ $(document).ready(function(){
 
 
 });
-

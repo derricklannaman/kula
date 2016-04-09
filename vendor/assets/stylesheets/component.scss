@@ -171,14 +171,14 @@ body,
 	}
 }
 
-.color-transition,
+/*.color-transition,*/
 .menu-icon-transition {
 	color: white !important;
 	background-color: #48a770;
 }
 
 .menu-icon-transition {
-	display: none;
+	opacity: 0;
 }
 
 button.nav-hamburger {

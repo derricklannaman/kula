@@ -120,9 +120,9 @@
 .icon-video:before {
 	content: "\e015";
 }
-.icon-stack:before {
+/*.icon-stack:before {
 	content: "\e016";
-}
+}*/
 .icon-lab:before {
 	content: "\e017";
 }

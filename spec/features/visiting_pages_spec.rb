@@ -12,5 +12,4 @@ RSpec.feature "Users can visit" do
     expect(current_path).to eq("/destinations")
     expect(page).to have_content('destinations')
   end
-
 end

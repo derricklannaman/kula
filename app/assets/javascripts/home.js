@@ -7,5 +7,5 @@ $(document).ready(function(){
 });
 
 function revealLocations() {
-  $('ul.location-list').slideDown('slow');
+  $('ul.location-list').slideToggle('fast');
 }

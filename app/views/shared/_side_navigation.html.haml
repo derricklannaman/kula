@@ -11,6 +11,11 @@
       %a.icon.icon-destinations{:href => "#"} Destinations
     %ul.location-list
       %li
+        =# link_to(image_tag('jamaica_port_antoinio.jpg', class: 'destination-image-link'), '#')
+        = link_to discover_jamaica_path do
+          = image_tag('jamaica_port_antoinio.jpg', class: 'destination-image-link')
+          %span Jamaica
+
         %a.icon.icon-location{:href => "#"} Jamaica
       %li
         %a.icon.icon-location{:href => "#"} Brazil

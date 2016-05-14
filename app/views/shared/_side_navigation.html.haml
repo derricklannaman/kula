@@ -11,21 +11,16 @@
       %a.icon.icon-destinations{:href => "#"} Destinations
     %ul.location-list
       %li
-        =# link_to(image_tag('jamaica_port_antoinio.jpg', class: 'destination-image-link'), '#')
-        = link_to discover_jamaica_path do
-          = image_tag('jamaica_port_antoinio.jpg', class: 'destination-image-link')
-          %span Jamaica
-
-        %a.icon.icon-location{:href => "#"} Jamaica
+        = link_to "discover Jamaica".titleize, discover_jamaica_path, class: "icon icon-location jamaica"
       %li
-        %a.icon.icon-location{:href => "#"} Brazil
+        = link_to "discover Brazil".titleize, discover_jamaica_path, class: "icon icon-location brazil"
       %li
-        %a.icon.icon-location{:href => "#"} Cuba
+        = link_to "discover Cuba".titleize, discover_jamaica_path, class: "icon icon-location cuba"
     %li
-      %a.icon.icon-about-us{:href => "#"} About Us
+      %a.icon.icon-about-us{:href => "#"} Menu
     %li
-      %a.icon.icon-study{:href => "#"} Study
+      %a.icon.icon-study{:href => "#"} About Us
     %li
-      %a.icon.icon-photo{:href => "#"} Collections
+      %a.icon.icon-photo{:href => "#"} Blog
     %li
-      %a.icon.icon-wallet{:href => "#"} Credits
+      %a.icon.icon-wallet{:href => "#"} Account

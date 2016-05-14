@@ -1,7 +1,29 @@
 a.icon.icon-location {
-  background-color: lighten(#2c774b, 20%)
+  background-color: lighten(#2c774b, 20%);
+  text-transform: none;
+}
+
+a.icon.icon-location.jamaica {
+  background-image: image_url('jamaica_port_antoinio.jpg');
+  background-size: 300px 200px;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+a.icon.icon-location.brazil {
+  background-image: image_url('brazil.jpg');
+  background-size: 300px 200px;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+a.icon.icon-location.cuba {
+  background-image: image_url('cuba.jpg');
+  background-size: 300px 200px;
+  background-repeat: no-repeat;
+  height: 200px;
 }
 
 img.destination-image-link {
-    width: 100%;
+  width: 100%;
 }

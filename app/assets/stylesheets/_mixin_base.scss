@@ -1,0 +1,12 @@
+/*Side Navigation Mixins*/
+
+@mixin sidebar-image-format {
+  background-size: 300px 200px;
+  background-repeat: no-repeat;
+  height: 200px;
+  opacity: 0.75;
+  &:hover {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+}

@@ -8,7 +8,14 @@
     = csrf_meta_tags
   %body
     #app-container.app-container
+      = render partial: "shared/top_navigation"
       = render partial: "shared/side_navigation"
-      = yield
+      .st-pusher
+        .st-content
+          / this is the wrapper for the content
+          .st-content-inner
+            / extra div for emulating position:fixed of the menu
+            = yield
+            / .codrops-top.clearfix
 
 

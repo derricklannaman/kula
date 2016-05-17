@@ -14,8 +14,8 @@
         .st-content
           / this is the wrapper for the content
           .st-content-inner
+            = yield
             / extra div for emulating position:fixed of the menu
-            .codrops-top.clearfix
-        = yield
+    .codrops-top.clearfix
 
 

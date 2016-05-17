@@ -21,22 +21,16 @@ body,
 .st-content,
 .st-content-inner {
 	position: relative;
-	padding: 60px;
-  /*border: 1px solid #00F;*/
 }
 
 .st-content-inner {
-	margin-top: 40px;
-  border: 1px solid #F00;
-  width: 100%;
+	margin-top: 200px;
 }
 
 .app-container {
 	position: relative;
-	/*overflow: hidden;*/
-	/*background: #48a770;*/
-	overflow: scroll;
-	background-color: #f3efe0;
+	overflow: hidden;
+	background: #48a770;
 }
 
 .st-pusher {
@@ -49,7 +43,7 @@ body,
 }
 
 .st-pusher::after {
-/*	position: absolute;
+	position: absolute;
 	top: 0;
 	right: 0;
 	width: 0;
@@ -58,7 +52,7 @@ body,
 	content: '';
 	opacity: 0;
 	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
-	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;*/
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
 }
 
 .st-menu-open .st-pusher::after {
@@ -109,7 +103,6 @@ body,
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	background: #48a770;
 }
 
 .st-menu h2 {
@@ -184,12 +177,6 @@ body,
 .color-transition,
 .menu-icon-transition {
 	color: white !important;
-}
-
-.color-transition {
-	visibility: visible;
-	background-color: #48a770;
-	transition: transform 0.5s;
 }
 
 .menu-icon-transition {

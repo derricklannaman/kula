@@ -4,10 +4,5 @@
   background-size: 300px 200px;
   background-repeat: no-repeat;
   height: 200px;
-  opacity: 0.9;
   text-align: center;
-  &:hover {
-    opacity: 1;
-    transition: opacity 0.15s ease-in-out;
-  }
 }

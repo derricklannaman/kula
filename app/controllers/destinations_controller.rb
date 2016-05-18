@@ -3,6 +3,11 @@ class DestinationsController < ApplicationController
   end
 
   def jamaica
+  end
 
+  def cuba
+  end
+
+  def brazil
   end
 end

@@ -8,18 +8,29 @@
 html,
 body,
 .app-container,
-.st-pusher,
+/*.st-pusher,*/
 .st-content {
 	height: 100%;
 }
 
 .st-content {
-	overflow-y: scroll;
-	background: #f3efe0;
+	/*overflow-y: scroll;*/
+	/*background: #f3efe0;*/
 	background-image: url('tropical_paradise.jpg');
-	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	margin-top: -100px;
+  &:before {
+    content: '';
+		position: absolute;
+		top: 900px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom, rgba(243, 239, 224, 0), rgba(243, 239, 224, 1));
+		opacity: 1;
+  }
+
 }
 
 .st-content,
@@ -36,9 +47,9 @@ body,
 .app-container {
 	position: relative;
 	overflow: hidden;
-	background: #48a770;
+	/*background: #48a770; green*/
   overflow: scroll;
-  /*background-color: #f3efe0;*/
+  background: #f3efe0;
 }
 
 .st-pusher {
@@ -84,17 +95,17 @@ body,
 	transition: all 0.5s;
 }
 
-.st-menu::after {
-/*	position: absolute;
-	top: 0;
-	right: 0;
+.menu-endcap {
+	height: 35%;
 	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,0.2);
-	content: '';
+	position: absolute;
+	bottom: 0;
+	background-image: linear-gradient(to bottom, rgba(243, 239, 224, 0), rgba(243, 239, 224, 1));
 	opacity: 1;
-	-webkit-transition: opacity 0.5s;
-	transition: opacity 0.5s;*/
+}
+
+.st-menu::after {
+
 }
 
 .st-menu-open .st-menu::after {

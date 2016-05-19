@@ -16,6 +16,10 @@ body,
 .st-content {
 	overflow-y: scroll;
 	background: #f3efe0;
+	background-image: url('tropical_paradise.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .st-content,
@@ -26,7 +30,6 @@ body,
 
 .st-content-inner {
 	margin-top: 200px;
-  border: 1px solid #F00;
   width: 100%;
 }
 
@@ -183,6 +186,10 @@ body,
 .menu-icon-transition {
 	color: white !important;
 	cursor: pointer;
+	 /* remove these to fix bgcolor transition*/
+/*	background-color: #48a770;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;*/
 }
 
 .menu-icon-transition {

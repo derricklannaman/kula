@@ -67,6 +67,7 @@ a:hover, a:focus {
 
 /* To Navigation Style */
 .codrops-top {
+	/*border: 9px solid #FFA500;*/
 	width: 100%;
 	text-transform: uppercase;
 	font-size: 0.69em;

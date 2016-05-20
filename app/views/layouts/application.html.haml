@@ -6,9 +6,16 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-  %body
+
+  %body{:class => "data-controller-#{controller_name} data-action-#{action_name}"}
     #app-container.app-container
+      = render partial: "shared/top_navigation"
       = render partial: "shared/side_navigation"
-      = yield
+      .st-pusher
+
+        = resolve_layout controller_name, action_name
+        .st-content-inner
+          = yield
+    .codrops-top.clearfix
 
 

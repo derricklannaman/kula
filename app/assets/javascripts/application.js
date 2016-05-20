@@ -12,8 +12,8 @@
 //
 //= require modernizr.custom.js
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
 //= require classie.js
-
 //= require_tree .

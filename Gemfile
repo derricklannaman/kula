@@ -13,6 +13,8 @@ gem 'html2haml'
 # gem 'stream_rails'
 gem 'font-awesome-sass'
 gem 'jquery-turbolinks'
+gem "cf-autoconfig", "~> 0.2.1"
+
 
 # gem 'devise'
 
@@ -60,6 +62,7 @@ group :test do
 end
 
 gem 'rails_12factor', group: :production
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -3,7 +3,6 @@ class DestinationsController < ApplicationController
   end
 
   def jamaica
-    render layout: "jamaica"
   end
 
   def cuba
@@ -11,4 +10,5 @@ class DestinationsController < ApplicationController
 
   def brazil
   end
+
 end

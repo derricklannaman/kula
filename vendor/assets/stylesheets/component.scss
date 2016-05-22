@@ -8,13 +8,17 @@
 html,
 body,
 .app-container,
-/*.st-pusher,*/
+.st-pusher,
 .st-content,
-.st-content-ja {
+.st-content-jamaica {
 	height: 100%;
 }
 
-.st-content-ja {
+.zero-opacity {
+	color: red;
+}
+
+.st-content-jamaica {
 	background-image: url('tropical_paradise.jpg');
 	background-position: center;
 	background-size: cover;
@@ -50,7 +54,7 @@ body,
   }
 }
 
-.st-content, .st-content-ja
+.st-content, .st-content-jamaica
 .st-content-inner {
 	position: relative;
 	padding: 0px 60px;
@@ -64,13 +68,13 @@ body,
 .app-container {
 	position: relative;
 	overflow: hidden;
-	/*background: #48a770; green*/
   overflow: scroll;
   background: #f3efe0;
 }
 
 .st-pusher {
 	position: relative;
+	top: -100px;
 	left: 0;
 	z-index: 99;
 	height: 100%;
@@ -195,25 +199,21 @@ body,
 	}
 }
 
-.color-transition,
-.menu-icon-transition {
-	color: white !important;
+.color-transition {
+	color: #388a5a !important;
 	cursor: pointer;
-	 /* remove these to fix bgcolor transition*/
-/*	background-color: #48a770;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;*/
 }
 
 .menu-icon-transition {
-	display: none;
+	opacity: 0;
+	cursor: auto;
 }
 
 button.nav-hamburger {
 	float: left;
   margin-top: -6px;
   background-color: rgba(0, 0, 0, 0);
-  color: #388a5a;
+  color: #FFF;
 }
 
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */

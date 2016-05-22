@@ -1,5 +1,21 @@
 @import "_mixin_base";
 
+.location-list-item {
+  height: 200px;
+  width: 300px;
+  overflow: hidden;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.location-list-item .icon-location:hover {
+  height: 300px;
+  width: 400px;
+}
+
 a.icon.icon-location {
   background-color: lighten(#2c774b, 20%);
   text-transform: none;

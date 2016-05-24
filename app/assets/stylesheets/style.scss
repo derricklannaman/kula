@@ -104,7 +104,8 @@ header.destination::before {
 	margin: 0em 0 0.15em 0;
 }
 
-.header-title__part {
+.header-title__part,
+.header-title__part-index {
 	font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
 	font-size: 0.85em;
 	font-weight: 400;
@@ -113,6 +114,19 @@ header.destination::before {
 	text-indent: 4px;
 	letter-spacing: 4px;
 	text-transform: uppercase;
+}
+
+.menu {
+	font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 13px;
+  font-weight: bold;
+}
+
+.header-title__part-index {
+	font-size: 0.65em;
+	text-indent: 265px;
 }
 
 .header-title__part::before,
@@ -131,7 +145,8 @@ header.destination::before {
 	color: #d1d2d2;
 }
 
-.intro {
+.intro,
+.intro-index {
 	font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
 	font-size: 2em;
 	position: relative;
@@ -144,24 +159,28 @@ header.destination::before {
 	justify-content: center;
 	-webkit-align-items: center;
 	align-items: center;
-	/*height: 150vh;*/
 	margin: 0 0 3em;
-	/*padding: 3em;*/
 	text-align: center;
 	color: #fff;
-	/*background: #181922;*/
 }
 
-.intro blockquote {
+.intro blockquote,
+.intro-index blockquote {
 	max-width: 800px;
 	margin: 0 auto;
 }
 
-.intro em {
+.intro-index blockquote {
+	margin-top: 3em;
+}
+
+.intro em,
+.intro-index em {
 	font-size: 1.5em;
 }
 
-.intro span {
+.intro span
+.intro-index span {
 	display: block;
 	padding: 1em 0;
 	color: #464b4b;

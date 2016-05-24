@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   get 'discover/jamaica', to: 'destinations#jamaica'
   get 'discover/cuba', to: 'destinations#cuba'
   get 'discover/brazil', to: 'destinations#brazil'
+
+
+  get 'menus', to: 'menus#index'
 end

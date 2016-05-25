@@ -8,14 +8,19 @@
 html,
 body,
 .app-container,
-/*.st-pusher,*/
+.st-pusher,
 .st-content,
-.st-content-ja {
+.st-content-home,
+.st-content-jamaica {
 	height: 100%;
 }
 
-.st-content-ja {
-	background-image: image-url('tropical_paradise.jpg');
+.zero-opacity {
+	color: red;
+}
+
+.st-content-jamaica {
+	background-image: url('tropical_paradise.jpg');
 	background-position: center;
 	background-size: cover;
 	margin-top: -100px;
@@ -31,7 +36,7 @@ body,
   }
 }
 
-.st-content {
+.st-content-home {
 	/*overflow-y: scroll;*/
 	/*background: #f3efe0;*/
 	background-image: url('cuba.jpg');
@@ -50,7 +55,9 @@ body,
   }
 }
 
-.st-content, .st-content-ja
+.st-content,
+.st-content-jamaica,
+.st-content-home,
 .st-content-inner {
 	position: relative;
 	padding: 0px 60px;
@@ -64,13 +71,13 @@ body,
 .app-container {
 	position: relative;
 	overflow: hidden;
-	/*background: #48a770; green*/
   overflow: scroll;
   background: #f3efe0;
 }
 
 .st-pusher {
 	position: relative;
+	top: -100px;
 	left: 0;
 	z-index: 99;
 	height: 100%;
@@ -111,14 +118,18 @@ body,
 	opacity: 1;
 }
 
-.st-menu::after {
-
-}
-
-.st-menu-open .st-menu::after {
-}
-
 /* content style */
+
+.map-container {
+  position: absolute;
+  z-index: -1;
+  top: 600px;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background-image: linear-gradient(to bottom, rgba(243, 239, 224, 1), rgba(243, 239, 224, 0));
+}
+
 
 .st-menu ul {
 	margin: 0;
@@ -195,25 +206,21 @@ body,
 	}
 }
 
-.color-transition,
-.menu-icon-transition {
-	color: white !important;
+.color-transition {
+	color: #388a5a !important;
 	cursor: pointer;
-	 /* remove these to fix bgcolor transition*/
-/*	background-color: #48a770;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;*/
 }
 
 .menu-icon-transition {
-	display: none;
+	opacity: 0;
+	cursor: auto;
 }
 
 button.nav-hamburger {
 	float: left;
   margin-top: -6px;
   background-color: rgba(0, 0, 0, 0);
-  color: #388a5a;
+  color: #FFF;
 }
 
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */

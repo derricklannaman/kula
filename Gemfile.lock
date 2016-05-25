@@ -53,9 +53,6 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    cf-autoconfig (0.2.1)
-      cf-runtime (= 0.2.0)
-    cf-runtime (0.2.0)
     childprocess (0.5.9)
       ffi (~> 1.0, >= 1.0.11)
     codemirror-rails (5.6)
@@ -284,7 +281,6 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   capybara
-  cf-autoconfig (~> 0.2.1)
   database_cleaner
   factory_girl_rails
   faker

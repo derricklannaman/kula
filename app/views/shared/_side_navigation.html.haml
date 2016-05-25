@@ -1,5 +1,8 @@
 %nav#menu-2.st-menu.nav-reveal
   %ul
+    - unless action_name == 'index'
+      %li
+        = link_to "Home".titleize, root_path, class: "icon"
     %li
       %a.icon.icon-destinations{:href => "#"} Destinations
     %ul.location-list
@@ -10,11 +13,11 @@
       %li
         = link_to "discover Brazil".titleize, discover_brazil_path, class: "icon icon-location brazil"
     %li
-      %a.icon.icon-about-us{:href => "#"} Menu
+      = link_to "menu".titleize, menus_path, class: "icon"
     %li
-      %a.icon.icon-study{:href => "#"} About Us
+      = link_to "about".titleize, root_path, class: "icon"
     %li
-      %a.icon.icon-photo{:href => "#"} Blog
+      = link_to "account".titleize, root_path, class: "icon"
     %li
-      %a.icon.icon-wallet{:href => "#"} Account
+      = link_to "blog".titleize, root_path, class: "icon"
   .menu-endcap

@@ -13,8 +13,6 @@ gem 'html2haml'
 # gem 'stream_rails'
 gem 'font-awesome-sass'
 gem 'jquery-turbolinks'
-gem "cf-autoconfig", "~> 0.2.1"
-
 
 # gem 'devise'
 

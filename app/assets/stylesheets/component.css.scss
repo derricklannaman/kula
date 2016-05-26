@@ -20,7 +20,7 @@ body,
 }
 
 .st-content-jamaica {
-	background-image: url('tropical_paradise.jpg');
+	background-image: image-url('tropical_paradise.jpg');
 	background-position: center;
 	background-size: cover;
 	margin-top: -100px;
@@ -36,10 +36,10 @@ body,
   }
 }
 
-.st-content-home {
+.st-content {
 	/*overflow-y: scroll;*/
 	/*background: #f3efe0;*/
-	background-image: url('cuba.jpg');
+	background-image: image-url('cuba.jpg');
 	background-position: center;
 	background-size: cover;
 	margin-top: -100px;

@@ -372,7 +372,8 @@ header.destination::before {
 	margin: 0.5em 0 1.5em;
 }
 
-.text section p.text-intro {
+.text section p.text-intro,
+.text section p.text-content {
 	font-size: 1.3em;
 	font-style: italic;
 	line-height: 1.5;

@@ -11,9 +11,9 @@
  * file per style scope.
  *
  *= require normalize.css
- *= require component.scss
- *= require demo.css
- *= require style.scss
+ *= require component.css.scss
+ *= require demo.css.scss
+ *= require style.css.scss
 
  *= require_tree .
  *= require_self

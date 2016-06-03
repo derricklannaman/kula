@@ -1,23 +1,30 @@
 %nav#menu-2.st-menu.nav-reveal
   %ul
-    - unless action_name == 'index'
+    - if controller_name == 'destinations'
       %li
         = link_to "Home".titleize, root_path, class: "icon"
-    %li
-      %a.icon.icon-destinations{:href => "#"} Destinations
-    %ul.location-list
-      %li.location-list-item
-        = link_to "discover Jamaica".titleize, discover_jamaica_path, class: "icon icon-location jamaica"
       %li
-        = link_to "discover Cuba".titleize, discover_cuba_path, class: "icon icon-location cuba"
+        = link_to "menu".titleize, menus_path, class: "icon"
+
+      %ul.location-list
+        %li.location-list-item
+          = link_to "discover Jamaica".titleize, discover_jamaica_path, class: "icon icon-location jamaica"
+    - else
       %li
-        = link_to "discover Brazil".titleize, discover_brazil_path, class: "icon icon-location brazil"
-    %li
-      = link_to "menu".titleize, menus_path, class: "icon"
-    %li
-      = link_to "about".titleize, root_path, class: "icon"
-    %li
-      = link_to "account".titleize, root_path, class: "icon"
-    %li
-      = link_to "blog".titleize, root_path, class: "icon"
-  .menu-endcap
+        %a.icon.icon-destinations{:href => "#"} Destinations
+      %ul.location-list
+        %li.location-list-item
+          = link_to "discover Jamaica".titleize, discover_jamaica_path, class: "icon icon-location jamaica"
+        %li
+          = link_to "discover Cuba".titleize, discover_cuba_path, class: "icon icon-location cuba"
+        %li
+          = link_to "discover Brazil".titleize, discover_brazil_path, class: "icon icon-location brazil"
+      %li
+        = link_to "menu".titleize, menus_path, class: "icon"
+      %li
+        = link_to "about".titleize, root_path, class: "icon"
+      %li
+        = link_to "account".titleize, root_path, class: "icon"
+      %li
+        = link_to "blog".titleize, root_path, class: "icon"
+    .menu-endcap

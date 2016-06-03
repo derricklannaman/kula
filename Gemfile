@@ -34,7 +34,7 @@ group :development do
   gem 'pry-rails'
   gem 'quiet_assets'
   gem 'meta_request'
-  gem 'thin'
+  gem 'puma'
   gem 'rails_db'
 end
 
@@ -60,12 +60,11 @@ group :test do
 end
 
 gem 'rails_12factor', group: :production
-
+gem 'puma'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-# Use Unicorn as the app server
-# gem 'unicorn'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 # See https://github.com/rails/execjs#readme for more supported runtimes

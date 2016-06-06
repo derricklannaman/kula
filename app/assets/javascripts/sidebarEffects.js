@@ -32,6 +32,7 @@ $(document).ready(function(){
 
 		var container = document.getElementById( 'app-container' ),
 			logo = document.getElementById('icon_name'),
+			mealMenu = document.getElementById('menu-2'),
 			buttons = Array.prototype.slice.call( document.querySelectorAll( '#st-trigger-effects > button' ) ),
 			// event type (if mobile use touch events)
 			eventtype = mobilecheck() ? 'touchstart' : 'click',
@@ -40,7 +41,23 @@ $(document).ready(function(){
 				buttons[0].classList.remove('menu-icon-transition');
 				logo.classList.remove('color-transition');
 				classie.remove( container, 'st-menu-open' );
+					var sideNavMenu = document.getElementsByClassName('st-pusher');
+					sideNavMenu[0].setAttribute("id", "");
+					$('.st-menu').width("300px");
 			},
+
+			showMenuItems = function() {
+				if(document.location.pathname == "/discover/jamaica") {
+					var sideNavMenu = document.getElementsByClassName('st-pusher');
+					sideNavMenu[0].setAttribute("id", "side-menu-items");
+					$('.st-menu').width("450px");
+				} else {
+					// var sideNavMenu = document.getElementsByClassName('st-pusher');
+					// sideNavMenu[0].setAttribute("id", "");
+					// $('.st-menu').width("300px");
+				}
+			},
+
 			bodyClickFn = function(evt) {
 				if( !hasParentClass( evt.target, 'st-menu') ) {
 					resetMenu();
@@ -57,6 +74,7 @@ $(document).ready(function(){
 				container.className = 'app-container'; // clear
 				classie.add( container, effect );
 				setTimeout( function() {
+					showMenuItems();
 					el.classList.add('menu-icon-transition');
 					logo.classList.add('color-transition');
 					classie.add( container, 'st-menu-open' );

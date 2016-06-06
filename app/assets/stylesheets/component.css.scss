@@ -173,6 +173,12 @@ body,
 
 
 /* Effect 2: Reveal */
+
+#side-menu-items {
+	-webkit-transform: translate3d(450px, 0, 0);
+	transform: translate3d(450px, 0, 0);
+}
+
 .nav-reveal.st-menu-open .st-pusher {
 	-webkit-transform: translate3d(300px, 0, 0);
 	transform: translate3d(300px, 0, 0);

@@ -35,3 +35,15 @@ a.icon.icon-location.cuba {
   background-image: image_url('cuba.jpg');
   @include sidebar-image-format;
 }
+
+li.meal-link {
+  border: 1px solid red;
+}
+
+li a.meal {
+  /*float: left;*/
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}

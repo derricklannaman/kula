@@ -1,10 +1,10 @@
-%nav#menu-2.st-menu.nav-reveal
+%nav.st-menu.nav-reveal
   %ul
     - if controller_name == 'destinations'
-      %li
-        = link_to "Home".titleize, root_path, class: "icon"
-      %li
-        = link_to "menu".titleize, menus_path, class: "icon"
+      %li.meal-link
+        = link_to "Home".titleize, root_path, class: "meal"
+
+        = link_to "menu".titleize, menus_path, class: "meal"
 
       %ul.location-list
         %li.location-list-item

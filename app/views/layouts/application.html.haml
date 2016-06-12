@@ -3,6 +3,10 @@
 %body{:class => "data-controller-#{controller_name} data-action-#{action_name}"}
   #app-container.app-container
     = render partial: "shared/top_navigation"
+    .notice= notice
+    .alert= alert
+
+
     = render partial: "shared/side_navigation"
     .st-pusher
       .st-content

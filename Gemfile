@@ -14,7 +14,7 @@ gem 'html2haml'
 gem 'font-awesome-sass'
 gem 'jquery-turbolinks'
 
-# gem 'devise'
+gem 'devise'
 
 # For image uploading => https://github.com/refile/refile
 # gem "refile", require: "refile/rails"

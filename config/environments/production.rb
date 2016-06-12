@@ -76,4 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_mailer.default_url_options = { host: 'http://kula-env.pm9mv8yf4f.us-west-2.elasticbeanstalk.com/', port: 80 }
+
 end

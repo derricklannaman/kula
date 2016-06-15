@@ -1,0 +1,10 @@
+= form_for @dinner do |f|
+  - if @dinner.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@dinner.errors.count, "error")} prohibited this dinner from being saved:"
+      %ul
+        - @dinner.errors.full_messages.each do |msg|
+          %li= msg
+
+  .actions
+    = f.submit 'Save'

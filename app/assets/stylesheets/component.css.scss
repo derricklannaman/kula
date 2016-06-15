@@ -9,7 +9,6 @@ html,
 body,
 .app-container,
 .st-pusher,
-/*.st-content,*/
 .st-content-home,
 .st-content-jamaica {
 	height: 100%;
@@ -18,48 +17,17 @@ body,
 .page-index-billboard,
 .page-destination-billboard {
 	width: 100%;
-  box-shadow: inset 5px 5px 10px #000;
-/*  &:before {
-    content: '';
-		position: absolute;
-		top: 100px;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background-image: linear-gradient(to bottom, rgba(243, 239, 224, 0), rgba(243, 239, 224, 1));
-		opacity: 1;
-  }*/
 }
 
 .st-content-jamaica {
-	/*background-image: image-url('tropical_paradise.jpg');*/
+	background-image: image-url('tropical_paradise.jpg');
 	background-position: center;
 	background-size: cover;
-	/*margin-top: -100px;*/
-  &:before {
-    content: '';
-		position: absolute;
-		top: 900px;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background-image: linear-gradient(to bottom, rgba(243, 239, 224, 0), rgba(243, 239, 224, 1));
-		opacity: 1;
-  }
+  box-shadow: inset 0px -34px 85px rgba(243, 239, 224, 1);
 }
 
 .st-content {
 	margin-top: -42px;
-/*  &:before {
-    content: '';
-		position: absolute;
-		top: 900px;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		background-image: linear-gradient(to bottom, rgba(243, 239, 224, 0), rgba(243, 239, 224, 1));
-		opacity: 1;
-  }*/
 }
 
 .container.how-it-works {
@@ -125,6 +93,10 @@ body,
 }
 
 /* content style */
+
+.page-marquee {
+  margin-top: 100px;
+}
 
 .map-container {
   position: absolute;

@@ -67,7 +67,8 @@ a:focus {
 }
 
 .destination-page-content {
-	margin-top: -500px;
+	/*margin-top: -500px;*/
+	/*border: 2px solid red;*/
 }
 
 /* Header */
@@ -167,7 +168,7 @@ header.destination::before {
 	justify-content: center;
 	-webkit-align-items: center;
 	align-items: center;
-	margin: 0 0 3em;
+	margin: 7em 0 3em;
 	text-align: center;
 	color: #fff;
 }

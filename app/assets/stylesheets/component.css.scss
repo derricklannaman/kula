@@ -60,6 +60,14 @@ body,
   }*/
 }
 
+.container.how-it-works {
+    color: #FFF;
+    border: 2px solid #FFF;
+    font-size: 40px;
+    margin-top: 400px;
+}
+
+
 .st-content-jamaica,
 .st-content-home {
 	position: relative;
@@ -73,7 +81,7 @@ body,
 .app-container {
 	position: relative;
   overflow: scroll;
-  background: #f3efe0;
+  /*background: #f3efe0;*/
 }
 
 .st-pusher {
@@ -102,7 +110,7 @@ body,
 	visibility: hidden;
 	width: 300px;
 	height: 97%;
-	background: #48a770;
+	background: rgba(0,0,0, 0.3);
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
@@ -207,7 +215,7 @@ body,
 
 #icon_name {
   margin-bottom: 100px;
-  position: absolute;
+  position: relative;
   z-index: 100;
   color: inherit;
   margin-bottom: -50px;
@@ -233,7 +241,7 @@ body,
 
 button.nav-hamburger {
 	float: left;
-  margin-top: -6px;
+  margin-top: 5px;
   background-color: rgba(0, 0, 0, 0);
   color: #FFF;
 }

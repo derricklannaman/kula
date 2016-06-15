@@ -1,14 +1,10 @@
 %nav.st-menu.nav-reveal
   %ul
     - if controller_name == 'destinations'
-      %li.meal-link
-        = link_to "Home".titleize, root_path, class: "meal"
+      - @dinners.each do |dinner|
+        %li.meal-link
+          = link_to "#{dinner.name}".titleize, dinner_path(dinner.id), class: "meal"
 
-        = link_to "menu".titleize, menus_path, class: "meal"
-
-      %ul.location-list
-        %li.location-list-item
-          = link_to "discover Jamaica".titleize, discover_jamaica_path, class: "icon icon-location jamaica"
     - else
       %li
         %a.icon.icon-destinations{:href => "#"} Destinations
@@ -20,11 +16,7 @@
         %li
           = link_to "discover Brazil".titleize, discover_brazil_path, class: "icon icon-location brazil"
       %li
-        = link_to "menu".titleize, menus_path, class: "icon"
-      %li
         = link_to "about".titleize, root_path, class: "icon"
       %li
         = link_to "account".titleize, root_path, class: "icon"
-      %li
-        = link_to "blog".titleize, root_path, class: "icon"
     .menu-endcap

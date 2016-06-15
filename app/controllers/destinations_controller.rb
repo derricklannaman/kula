@@ -3,6 +3,8 @@ class DestinationsController < ApplicationController
   end
 
   def jamaica
+    @destination = Destination.where(name: params[:action].capitalize).first
+    @dinners = @destination.dinners
     render layout: "jamaica"
   end
 

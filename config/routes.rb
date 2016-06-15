@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get 'discover/cuba', to: 'destinations#cuba'
   get 'discover/brazil', to: 'destinations#brazil'
 
+  resources :dinners
+
+  get 'admin_dashboard', to: 'admin#dashboard'
 
   get 'menus', to: 'menus#index'
 end

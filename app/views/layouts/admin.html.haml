@@ -1,0 +1,14 @@
+= render partial: "shared/head"
+
+%nav.navbar.navbar-fixed-top
+  .container
+    %h1 Admin Panel
+
+.admin-navigation
+  %ul
+    %li
+      = link_to "add destination", '#', class: 'icon'
+    %li
+      = link_to "add dinner", '#'
+
+.overview

@@ -1,6 +1,9 @@
-%p#notice= notice
+.inner-page-content
+  %p#notice= notice
+  .container
+    %h1= @dinner.name
+    %div= @dinner.description
 
-
-= link_to 'Edit', edit_dinner_path(@dinner)
-\|
-= link_to 'Back', dinners_path
+    = link_to 'Edit', edit_dinner_path(@dinner)
+    \|
+    = link_to 'Back', dinners_path

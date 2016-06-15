@@ -55,19 +55,27 @@ a:focus {
 /* Canvas container */
 
 .container {
-	position: fixed;
+/*	position: fixed;
 	z-index: -1;
 	top: 0;
-	left: 0;
+	left: 0;*/
 }
 
+.destination-page {
+	/*border: 3px solid red;*/
+	/*margin-top: -400px;*/
+}
+
+.destination-page-content {
+	margin-top: -500px;
+}
 
 /* Header */
 
 header.destination {
 	position: relative;
 	z-index: 1000;
-	top: 330px;
+	/*top: 330px;*/
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-direction: column;
@@ -76,7 +84,6 @@ header.destination {
 	justify-content: center;
 	-webkit-align-items: center;
 	align-items: center;
-	min-height: 600px;
 	padding: 2em 1em 4em;
 	text-align: center;
 	color: #fff;

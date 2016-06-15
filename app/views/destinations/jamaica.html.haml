@@ -1,66 +1,68 @@
-.main
-  %header.destination
-    .codrops-links
-    %h1.header-title
-      %span.header-title__main Jamaica
-      %span.header-title__part Out of Many, One People
-      %span.header-title__sub
-  .intro
-    %blockquote
-      %em
-        “Don't gain the world and lose your soul, wisdom is better than silver or gold...
-        = succeed "" do
-          %br/
-      %span Bob Marley
-  .container
-  .text
-    %section.js-section{"data-zoom-middle" => "2"}
-      %h2
-        %span.title-up Some cool title here
-        %span.title-down The Adventure Begins
-      %p.text-intro The Arawak and Taíno indigenous people, originating in South America, settled on the island between 4000 and 1000 BC. When Christopher Columbus arrived in 1494, there were more than 200 villages ruled by caciques (chiefs of villages). The south coast of Jamaica was the most populated, especially around the area now known as Old Harbour. The Taino still inhabited Jamaica when the English took control of the island in 1655. The Jamaican National Heritage Trust is attempting to locate and document any evidence of the Taino/Arawaks.
-      .map-container
-        =# image_tag('map.svg')
+.destination-page
+  = image_tag('tropical_paradise.jpg', class: "page-destination-billboard")
+  .destination-page-content
+    %header.destination
+      .codrops-links
+      %h1.header-title
+        %span.header-title__main Jamaica
+        %span.header-title__part Out of Many, One People
+        / %span.header-title__sub
+    .intro
+      %blockquote
+        %em
+          “Don't gain the world and lose your soul, wisdom is better than silver or gold...
+          = succeed "" do
+            %br/
+        %span Bob Marley
+    / .container
+    .text
+      %section.js-section{"data-zoom-middle" => "2"}
+        %h2
+          %span.title-up Some cool title here
+          %span.title-down The Adventure Begins
+        %p.text-intro The Arawak and Taíno indigenous people, originating in South America, settled on the island between 4000 and 1000 BC. When Christopher Columbus arrived in 1494, there were more than 200 villages ruled by caciques (chiefs of villages). The south coast of Jamaica was the most populated, especially around the area now known as Old Harbour. The Taino still inhabited Jamaica when the English took control of the island in 1655. The Jamaican National Heritage Trust is attempting to locate and document any evidence of the Taino/Arawaks.
+        .map-container
+          =# image_tag('map.svg')
 
-      %p.text-content We created some sort of sensation as we entered the capital of Iceland. The clocks were striking ten as we clattered down the long main street; it was a time when the populace were at leisure and on the street, and they evinced no little curiosity as we rode by them. They were congregated in small groups, and it was evident to us that we were being discussed—and no wonder, for we were a motley-looking cavalcade! We must have presented a very grotesque appearance, clad as we were in oilskins, and covered with mud from head to foot: it had been raining at intervals on the way, and we had had a rather disagreeable journey.
-      %figure
-        = image_tag "9.jpg", class: "js-image", 'data-pos' => "0.25"
-        %figcaption All things come to an end, and so did our journey when we reached the end of the main street in Reykjavik
-      %p.text-content Jamaica slowly gained increasing independence from the United Kingdom. In 1958, it became a province in the Federation of the West Indies, a federation among the British West Indies. Jamaica attained full independence by leaving the federation in 1962. Strong economic growth, averaging approximately 6% per annum, marked the first ten years of independence under conservative Jamaica Labour Party governments; they were led successively by Prime Ministers Alexander Bustamante, Donald Sangster and Hugh Shearer. The growth was fueled by strong private investments in bauxite/alumina, tourism, the manufacturing industry and, to a lesser extent, the agricultural sector.
+        %p.text-content We created some sort of sensation as we entered the capital of Iceland. The clocks were striking ten as we clattered down the long main street; it was a time when the populace were at leisure and on the street, and they evinced no little curiosity as we rode by them. They were congregated in small groups, and it was evident to us that we were being discussed—and no wonder, for we were a motley-looking cavalcade! We must have presented a very grotesque appearance, clad as we were in oilskins, and covered with mud from head to foot: it had been raining at intervals on the way, and we had had a rather disagreeable journey.
+        %figure
+          = image_tag "9.jpg", class: "js-image", 'data-pos' => "0.25"
+          %figcaption All things come to an end, and so did our journey when we reached the end of the main street in Reykjavik
+        %p.text-content Jamaica slowly gained increasing independence from the United Kingdom. In 1958, it became a province in the Federation of the West Indies, a federation among the British West Indies. Jamaica attained full independence by leaving the federation in 1962. Strong economic growth, averaging approximately 6% per annum, marked the first ten years of independence under conservative Jamaica Labour Party governments; they were led successively by Prime Ministers Alexander Bustamante, Donald Sangster and Hugh Shearer. The growth was fueled by strong private investments in bauxite/alumina, tourism, the manufacturing industry and, to a lesser extent, the agricultural sector.
 
-      %p.text-content The optimism of the first decade was accompanied by a growing sense of inequality, and concern that the benefits of growth were not being shared by the urban poor. Combined with the effects of a slowdown in the global economy in 1970,the voters elected the PNP (People's National Party) in 1972. They tried to implement more socially equitable policies in education and health, but the economy suffered under their leadership. By 1980, Jamaica's gross national product had declined to some 25% below the 1972 level. Due to rising foreign and local debt, accompanied by large fiscal deficits, the government sought International Monetary Fund (IMF) financing from the United States and others. The international bankers imposed IMF austerity measures (with a greater than 25% interest rate per year).
+        %p.text-content The optimism of the first decade was accompanied by a growing sense of inequality, and concern that the benefits of growth were not being shared by the urban poor. Combined with the effects of a slowdown in the global economy in 1970,the voters elected the PNP (People's National Party) in 1972. They tried to implement more socially equitable policies in education and health, but the economy suffered under their leadership. By 1980, Jamaica's gross national product had declined to some 25% below the 1972 level. Due to rising foreign and local debt, accompanied by large fiscal deficits, the government sought International Monetary Fund (IMF) financing from the United States and others. The international bankers imposed IMF austerity measures (with a greater than 25% interest rate per year).
 
-      %p.text-content Economic deterioration continued into the mid-1980s, exacerbated by a number of factors; the first and third largest alumina producers, Alpart and Alcoa, closed, and there was a significant reduction in production by the second largest producer, Alcan. In addition, tourism decreased and Reynolds Jamaica Mines, Ltd. left the Jamaican industry. Independence, however widely celebrated in Jamaica, has in more recent years come into question. In 2011, a survey showed that approximately 60% of Jamaicans would push to once again become a British territory, citing years of social and fiscal mismanagement in the country.
-    %section.js-section{"data-zoom-start" => "2"}
-      %h2
-        %span.title-up Some cool title herre
-        %span.title-down A Helping Hand
-      %p.text-content The optimism of the first decade was accompanied by a growing sense of inequality, and concern that the benefits of growth were not being shared by the urban poor. Combined with the effects of a slowdown in the global economy in 1970,the voters elected the PNP (People's National Party) in 1972. They tried to implement more socially equitable policies in education and health, but the economy suffered under their leadership. By 1980, Jamaica's gross national product had declined to some 25% below the 1972 level. Due to rising foreign and local debt, accompanied by large fiscal deficits, the government sought International Monetary Fund (IMF) financing from the United States and others. The international bankers imposed IMF austerity measures (with a greater than 25% interest rate per year).
+        %p.text-content Economic deterioration continued into the mid-1980s, exacerbated by a number of factors; the first and third largest alumina producers, Alpart and Alcoa, closed, and there was a significant reduction in production by the second largest producer, Alcan. In addition, tourism decreased and Reynolds Jamaica Mines, Ltd. left the Jamaican industry. Independence, however widely celebrated in Jamaica, has in more recent years come into question. In 2011, a survey showed that approximately 60% of Jamaicans would push to once again become a British territory, citing years of social and fiscal mismanagement in the country.
+      %section.js-section{"data-zoom-start" => "2"}
+        %h2
+          %span.title-up Some cool title herre
+          %span.title-down A Helping Hand
+        %p.text-content The optimism of the first decade was accompanied by a growing sense of inequality, and concern that the benefits of growth were not being shared by the urban poor. Combined with the effects of a slowdown in the global economy in 1970,the voters elected the PNP (People's National Party) in 1972. They tried to implement more socially equitable policies in education and health, but the economy suffered under their leadership. By 1980, Jamaica's gross national product had declined to some 25% below the 1972 level. Due to rising foreign and local debt, accompanied by large fiscal deficits, the government sought International Monetary Fund (IMF) financing from the United States and others. The international bankers imposed IMF austerity measures (with a greater than 25% interest rate per year).
 
-      %p.text-content Economic deterioration continued into the mid-1980s, exacerbated by a number of factors; the first and third largest alumina producers, Alpart and Alcoa, closed, and there was a significant reduction in production by the second largest producer, Alcan. In addition, tourism decreased and Reynolds Jamaica Mines, Ltd. left the Jamaican industry. Independence, however widely celebrated in Jamaica, has in more recent years come into question. In 2011, a survey showed that approximately 60% of Jamaicans would push to once again become a British territory, citing years of social and fiscal mismanagement in the country.
-      %figure
-        = image_tag "5.jpg", class: "js-image", 'data-pos' => "0.6"
-        %figcaption I was the geographer, whose mission it was to make a map of a small portion of the country traversed.
-      %p.text-content The optimism of the first decade was accompanied by a growing sense of inequality, and concern that the benefits of growth were not being shared by the urban poor. Combined with the effects of a slowdown in the global economy in 1970,the voters elected the PNP (People's National Party) in 1972. They tried to implement more socially equitable policies in education and health, but the economy suffered under their leadership. By 1980, Jamaica's gross national product had declined to some 25% below the 1972 level. Due to rising foreign and local debt, accompanied by large fiscal deficits, the government sought International Monetary Fund (IMF) financing from the United States and others. The international bankers imposed IMF austerity measures (with a greater than 25% interest rate per year).
+        %p.text-content Economic deterioration continued into the mid-1980s, exacerbated by a number of factors; the first and third largest alumina producers, Alpart and Alcoa, closed, and there was a significant reduction in production by the second largest producer, Alcan. In addition, tourism decreased and Reynolds Jamaica Mines, Ltd. left the Jamaican industry. Independence, however widely celebrated in Jamaica, has in more recent years come into question. In 2011, a survey showed that approximately 60% of Jamaicans would push to once again become a British territory, citing years of social and fiscal mismanagement in the country.
+        %figure
+          = image_tag "5.jpg", class: "js-image", 'data-pos' => "0.6"
+          %figcaption I was the geographer, whose mission it was to make a map of a small portion of the country traversed.
+        %p.text-content The optimism of the first decade was accompanied by a growing sense of inequality, and concern that the benefits of growth were not being shared by the urban poor. Combined with the effects of a slowdown in the global economy in 1970,the voters elected the PNP (People's National Party) in 1972. They tried to implement more socially equitable policies in education and health, but the economy suffered under their leadership. By 1980, Jamaica's gross national product had declined to some 25% below the 1972 level. Due to rising foreign and local debt, accompanied by large fiscal deficits, the government sought International Monetary Fund (IMF) financing from the United States and others. The international bankers imposed IMF austerity measures (with a greater than 25% interest rate per year).
 
-      %p.text-content Economic deterioration continued into the mid-1980s, exacerbated by a number of factors; the first and third largest alumina producers, Alpart and Alcoa, closed, and there was a significant reduction in production by the second largest producer, Alcan. In addition, tourism decreased and Reynolds Jamaica Mines, Ltd. left the Jamaican industry. Independence, however widely celebrated in Jamaica, has in more recent years come into question. In 2011, a survey showed that approximately 60% of Jamaicans would push to once again become a British territory, citing years of social and fiscal mismanagement in the country.
-    %section.js-section{"data-stay" => "true", "data-zoom-start" => "2.5"}
-      %h2
-        %span.title-up Some coolre
-        %span.title-down New Adventures
-      %p.text-content The optimism of the first decade was accompanied by a growing sense of inequality, and concern that the benefits of growth were not being shared by the urban poor. Combined with the effects of a slowdown in the global economy in 1970,the voters elected the PNP (People's National Party) in 1972. They tried to implement more socially equitable policies in education and health, but the economy suffered under their leadership. By 1980, Jamaica's gross national product had declined to some 25% below the 1972 level. Due to rising foreign and local debt, accompanied by large fiscal deficits, the government sought International Monetary Fund (IMF) financing from the United States and others. The international bankers imposed IMF austerity measures (with a greater than 25% interest rate per year).
+        %p.text-content Economic deterioration continued into the mid-1980s, exacerbated by a number of factors; the first and third largest alumina producers, Alpart and Alcoa, closed, and there was a significant reduction in production by the second largest producer, Alcan. In addition, tourism decreased and Reynolds Jamaica Mines, Ltd. left the Jamaican industry. Independence, however widely celebrated in Jamaica, has in more recent years come into question. In 2011, a survey showed that approximately 60% of Jamaicans would push to once again become a British territory, citing years of social and fiscal mismanagement in the country.
+      %section.js-section{"data-stay" => "true", "data-zoom-start" => "2.5"}
+        %h2
+          %span.title-up Some coolre
+          %span.title-down New Adventures
+        %p.text-content The optimism of the first decade was accompanied by a growing sense of inequality, and concern that the benefits of growth were not being shared by the urban poor. Combined with the effects of a slowdown in the global economy in 1970,the voters elected the PNP (People's National Party) in 1972. They tried to implement more socially equitable policies in education and health, but the economy suffered under their leadership. By 1980, Jamaica's gross national product had declined to some 25% below the 1972 level. Due to rising foreign and local debt, accompanied by large fiscal deficits, the government sought International Monetary Fund (IMF) financing from the United States and others. The international bankers imposed IMF austerity measures (with a greater than 25% interest rate per year).
 
-      %p.text-content Economic deterioration continued into the mid-1980s, exacerbated by a number of factors; the first and third largest alumina producers, Alpart and Alcoa, closed, and there was a significant reduction in production by the second largest producer, Alcan. In addition, tourism decreased and Reynolds Jamaica Mines, Ltd. left the Jamaican industry. Independence, however widely celebrated in Jamaica, has in more recent years come into question. In 2011, a survey showed that approximately 60% of Jamaicans would push to once again become a British territory, citing years of social and fiscal mismanagement in the country.
-      %figure
-        .js-gallery-content
-          = image_tag("6.jpg")
-          = image_tag("4.jpg")
-          = image_tag("11.jpg")
-          = image_tag("8.jpg")
-        %figcaption An unexpected turn in our journey led us to many impressive places.
-      %p.text-content The optimism of the first decade was accompanied by a growing sense of inequality, and concern that the benefits of growth were not being shared by the urban poor. Combined with the effects of a slowdown in the global economy in 1970,the voters elected the PNP (People's National Party) in 1972. They tried to implement more socially equitable policies in education and health, but the economy suffered under their leadership. By 1980, Jamaica's gross national product had declined to some 25% below the 1972 level. Due to rising foreign and local debt, accompanied by large fiscal deficits, the government sought International Monetary Fund (IMF) financing from the United States and others. The international bankers imposed IMF austerity measures (with a greater than 25% interest rate per year).
+        %p.text-content Economic deterioration continued into the mid-1980s, exacerbated by a number of factors; the first and third largest alumina producers, Alpart and Alcoa, closed, and there was a significant reduction in production by the second largest producer, Alcan. In addition, tourism decreased and Reynolds Jamaica Mines, Ltd. left the Jamaican industry. Independence, however widely celebrated in Jamaica, has in more recent years come into question. In 2011, a survey showed that approximately 60% of Jamaicans would push to once again become a British territory, citing years of social and fiscal mismanagement in the country.
+        %figure
+          .js-gallery-content
+            = image_tag("6.jpg")
+            = image_tag("4.jpg")
+            = image_tag("11.jpg")
+            = image_tag("8.jpg")
+          %figcaption An unexpected turn in our journey led us to many impressive places.
+        %p.text-content The optimism of the first decade was accompanied by a growing sense of inequality, and concern that the benefits of growth were not being shared by the urban poor. Combined with the effects of a slowdown in the global economy in 1970,the voters elected the PNP (People's National Party) in 1972. They tried to implement more socially equitable policies in education and health, but the economy suffered under their leadership. By 1980, Jamaica's gross national product had declined to some 25% below the 1972 level. Due to rising foreign and local debt, accompanied by large fiscal deficits, the government sought International Monetary Fund (IMF) financing from the United States and others. The international bankers imposed IMF austerity measures (with a greater than 25% interest rate per year).
 
-      %p.text-content Economic deterioration continued into the mid-1980s, exacerbated by a number of factors; the first and third largest alumina producers, Alpart and Alcoa, closed, and there was a significant reduction in production by the second largest producer, Alcan. In addition, tourism decreased and Reynolds Jamaica Mines, Ltd. left the Jamaican industry. Independence, however widely celebrated in Jamaica, has in more recent years come into question. In 2011, a survey showed that approximately 60% of Jamaicans would push to once again become a British territory, citing years of social and fiscal mismanagement in the country.
+        %p.text-content Economic deterioration continued into the mid-1980s, exacerbated by a number of factors; the first and third largest alumina producers, Alpart and Alcoa, closed, and there was a significant reduction in production by the second largest producer, Alcan. In addition, tourism decreased and Reynolds Jamaica Mines, Ltd. left the Jamaican industry. Independence, however widely celebrated in Jamaica, has in more recent years come into question. In 2011, a survey showed that approximately 60% of Jamaicans would push to once again become a British territory, citing years of social and fiscal mismanagement in the country.
 
-    %section.js-section{"data-stay" => "true", "data-zoom-start" => "0.8"}
-/ /main
+      %section.js-section{"data-stay" => "true", "data-zoom-start" => "0.8"}
+  / /main

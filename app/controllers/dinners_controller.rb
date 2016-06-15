@@ -10,6 +10,7 @@ class DinnersController < ApplicationController
   # GET /dinners/1
   # GET /dinners/1.json
   def show
+    @dinner = Dinner.find(params[:id])
   end
 
   # GET /dinners/new

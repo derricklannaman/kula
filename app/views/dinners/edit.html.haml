@@ -1,7 +1,9 @@
-%h1 Editing dinner
+.inner-page-content
+  .container
+    %h1 Editing dinner
 
-= render 'form'
+    = render 'form'
 
-= link_to 'Show', @dinner
-\|
-= link_to 'Back', dinners_path
+    = link_to 'Show', @dinner
+    \|
+    = link_to 'Back', dinners_path

@@ -1,7 +1,10 @@
-#top-nav-stack
+%nav.navbar.navbar-fixed-top
   #icon_name
     %span#st-trigger-effects
       %button{"data-effect" => "nav-reveal", class: 'nav-hamburger' }
         .menu
         %i.fa.fa-bars.fa-4x
     %span.app_name KULA
+
+  %span
+    = user_signed_in?

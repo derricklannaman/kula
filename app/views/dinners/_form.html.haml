@@ -1,12 +1,26 @@
-= form_for @dinner do |f|
-  - if @dinner.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@dinner.errors.count, "error")} prohibited this dinner from being saved:"
-      %ul
-        - @dinner.errors.full_messages.each do |msg|
-          %li= msg
+.container
+  = form_for @dinner do |f|
+    - if @dinner.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@dinner.errors.count, "error")} prohibited this dinner from being saved:"
+        %ul
+          - @dinner.errors.full_messages.each do |msg|
+            %li= msg
+    %div
+      = f.label :name, "name"
+      = f.text_field :name
+    %div
+      = f.label :image, "image"
+      = f.text_field :image
+    %div
+      = f.label :description, "description"
+      = f.text_area :description
+    %div
+      = f.label :price, "price"
+      = f.number_field :price
+    %div
+      = f.label :destination_id, "destination"
+      = f.number_field :destination_id
 
-  %div
-    =
-  .actions
-    = f.submit 'Save'
+    .actions
+      = f.submit 'Save'

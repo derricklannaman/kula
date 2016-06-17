@@ -1,10 +1,5 @@
 @font-face {
-/*	font-family: 'codropsicons';
-	font-weight: normal;
-	font-style: normal;
-	src: url('../fonts/codropsicons/codropsicons.eot');
-	src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('../fonts/codropsicons/codropsicons.woff') format('woff'), url('../fonts/codropsicons/codropsicons.ttf') format('truetype'), url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
-*/}
+}
 
 *,
 *:after,
@@ -25,7 +20,6 @@
 
 body {
 	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	/*color: #5d5c56;*/
 	color: #fff;
 	background: #fff;
 	-webkit-font-smoothing: antialiased;
@@ -55,20 +49,12 @@ a:focus {
 /* Canvas container */
 
 .container {
-/*	position: fixed;
-	z-index: -1;
-	top: 0;
-	left: 0;*/
 }
 
 .destination-page {
-	/*border: 3px solid red;*/
-	/*margin-top: -400px;*/
 }
 
 .destination-page-content {
-	/*margin-top: -500px;*/
-	/*border: 2px solid red;*/
 }
 
 /* Header */
@@ -97,8 +83,7 @@ header.destination::before {
 	left: 0;
 	width: 100%;
 	height: 50%;
-/*	background-image: linear-gradient(rgba(24, 25, 34, 0.3), rgba(24, 25, 34, 0));
-*/}
+}
 
 .header-title {
 	position: relative;

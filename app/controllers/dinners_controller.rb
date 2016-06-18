@@ -29,7 +29,7 @@ class DinnersController < ApplicationController
     @dinner = Dinner.new(dinner_params)
     respond_to do |format|
       if @dinner.save
-        format.html { redirect_to admin_dashboard_path, notice: 'Dinner was successfully created.' }
+        format.html { redirect_to admin_dashboard_path }
         format.json { render :show, status: :created, location: @dinner }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class DinnersController < ApplicationController
   def update
     respond_to do |format|
       if @dinner.update(dinner_params)
-        format.html { redirect_to @dinner, notice: 'Dinner was successfully updated.' }
+        format.html { redirect_to @dinner }
         format.json { render :show, status: :ok, location: @dinner }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class DinnersController < ApplicationController
   def destroy
     @dinner.destroy
     respond_to do |format|
-      format.html { redirect_to dinners_url, notice: 'Dinner was successfully destroyed.' }
+      format.html { redirect_to dinners_url }
       format.json { head :no_content }
     end
   end

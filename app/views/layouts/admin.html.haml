@@ -2,7 +2,14 @@
 
 %nav.navbar.navbar-fixed-top.admin-top
   %h1 Admin Panel
-  = link_to "add dinners", "#", id: "dinner-admin"
+  = link_to "home", root_path
+  \|
+  = link_to "View Jamaica", discover_jamaica_path, class: "meal"
+  \|
+  = link_to "perform an action link", "#", class: "meal"
+  \|
+  = link_to "perform an action link", "#", class: "meal"
+
 .container-fluid.admin
 
   .container.graphs
@@ -18,7 +25,7 @@
           = image_tag attachment_url(dinner, :dinner_image, :fill, 170, 170, format: "jpg")
           %p
             = dinner.name
-            = dinner.description
+            =# dinner.description.truncate_words(4)
             = dinner.price
             .action_
             = link_to 'Show', dinner

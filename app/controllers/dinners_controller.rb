@@ -25,11 +25,11 @@ class DinnersController < ApplicationController
   # POST /dinners
   # POST /dinners.json
   def create
+    # binding.pry
     @dinner = Dinner.new(dinner_params)
-
     respond_to do |format|
       if @dinner.save
-        format.html { redirect_to @dinner, notice: 'Dinner was successfully created.' }
+        format.html { redirect_to admin_dashboard_path, notice: 'Dinner was successfully created.' }
         format.json { render :show, status: :created, location: @dinner }
       else
         format.html { render :new }
@@ -70,6 +70,6 @@ class DinnersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dinner_params
-      params[:dinner]
+      params.require(:dinner).permit(:name, :image, :dinner_image, :description, :price, :destination_id)
     end
 end

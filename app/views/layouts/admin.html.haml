@@ -2,14 +2,31 @@
 
 %nav.navbar.navbar-fixed-top.admin-top
   %h1 Admin Panel
+  = link_to "add dinners", "#", id: "dinner-admin"
+.container-fluid.admin
 
-.container.admin
+  .container.graphs
+    .panel.action
+      = image_tag('graph_placeholder1.png')
+    .panel.action
+      = image_tag('graph_placeholder2.png')
 
   .container.actions
     .panel.action
+      - @dinners.each do |dinner|
+        .dinner-thumbnail
+          = image_tag attachment_url(dinner, :dinner_image, :fill, 170, 170, format: "jpg")
+          %p
+            = dinner.name
+            = dinner.description
+            = dinner.price
+            .action_
+            = link_to 'Show', dinner
+            = link_to 'Edit', edit_dinner_path(dinner)
+            = link_to 'Destroy', dinner, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %br
+
+    .panel.action
       = render partial: "dinners/new"
     .panel.action
-    .panel.action
-.admin-navigation
-
 

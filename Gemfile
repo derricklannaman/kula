@@ -17,9 +17,9 @@ gem 'jquery-turbolinks'
 gem 'devise'
 
 # For image uploading => https://github.com/refile/refile
-# gem "refile", require: "refile/rails"
-# gem "refile-mini_magick"
-# gem "refile-s3"
+gem "refile", require: "refile/rails"
+gem "refile-mini_magick"
+gem "refile-s3"
 
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
@@ -34,7 +34,6 @@ group :development do
   gem 'pry-rails'
   gem 'quiet_assets'
   gem 'meta_request'
-  gem 'puma'
   gem 'rails_db'
 end
 
@@ -61,6 +60,7 @@ end
 
 gem 'rails_12factor', group: :production
 gem 'puma'
+gem 'react-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

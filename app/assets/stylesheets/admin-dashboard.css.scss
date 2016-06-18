@@ -1,7 +1,7 @@
 @import 'mixin_base';
 
-
-.container.admin {
+.container.admin,
+.container.graphs {
   @include default-border;
   height: 100%;
   min-width: 1170px;
@@ -12,17 +12,6 @@ nav.navbar.navbar-fixed-top.admin-top {
   @include default-border;
   background-color: #FFF;
   padding-left: 40px;
-}
-
-.admin-navigation {
-  @include default-border;
-  height: 100%;
-  width: 300px;
-  padding-top: 100px;
-  position: absolute;
-  top: 0;
-  left: -1px;
-  background-color: burlywood;
 }
 
 li {
@@ -36,13 +25,21 @@ li {
 
 .panel.action:first-child {
   margin-top: 110px;
+  overflow-x: scroll;
+}
+
+.dinner-thumbnail {
+  box-shadow: 0px 0px 3px #999;
+  margin: 5px;
+  float: left;
+  flex: initial;
+  font-size: 16px;
+  padding: 3px;
+  text-align-last: justify;
 }
 
 .container.actions {
-    @include default-border;
-    float: left;
-    margin-left: 300px;
-    width: 800px;
+  @include default-border;
 }
 
 /* Same as .admin-navigation ul li a .... TODO -> mixin

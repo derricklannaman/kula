@@ -1,6 +1,8 @@
 .inner-page-content
   %p#notice= notice
   .container
+    = image_tag attachment_url(@dinner, :dinner_image, :fill, 300, 300, format: "jpg")
+
     %h1= @dinner.name
     %div= @dinner.description
 

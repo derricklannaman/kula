@@ -1,4 +1,4 @@
-.container
+.new-dinner-form
   = form_for @dinner do |f|
     - if @dinner.errors.any?
       #error_explanation
@@ -10,8 +10,8 @@
       = f.label :name, "name"
       = f.text_field :name
     %div
-      = f.label :image, "image"
-      = f.text_field :image
+      = f.label :dinner_image, "dinner image"
+      = f.attachment_field :dinner_image, direct: true
     %div
       = f.label :description, "description"
       = f.text_area :description

@@ -10,6 +10,7 @@
   %tbody
     - @dinners.each do |dinner|
       %tr
+        %td= attachment_image_tag(dinner, :dinner_image, :fill, 70, 70, format: "jpg") unless @dinner_image_id.blank?
         %td= dinner.name
         %td= dinner.description
         %td= dinner.price

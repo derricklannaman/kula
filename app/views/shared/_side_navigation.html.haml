@@ -3,6 +3,7 @@
     - if controller_name == 'destinations'
       - @dinners.each do |dinner|
         %li.meal-link
+          = image_tag attachment_url(@dinner, :dinner_image, :fill, 300, 300, format: "jpg") unless @dinner_image_id.blank?
           = link_to "#{dinner.name}".titleize, dinner_path(dinner.id), class: "meal"
 
     - else
